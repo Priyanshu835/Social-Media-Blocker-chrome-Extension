@@ -1,5 +1,5 @@
 const generateHTML = (pageName) => {
-    return `<div id="clouds">
+  return `<div id="clouds">
     <div class="cloud x1"></div>
     <div class="cloud x1_5"></div>
     <div class="cloud x2"></div>
@@ -15,8 +15,8 @@ const generateHTML = (pageName) => {
 </div>`;
 };
 
-const generateSTYLING = ()=>{
-    return `<style>@import url(https://fonts.googleapis.com/css?family=opensans:500);
+const generateSTYLING = () => {
+  return `<style>@import url(https://fonts.googleapis.com/css?family=opensans:500);
     body {
       background: #33cc99;
       color: #fff;
@@ -248,17 +248,25 @@ const generateSTYLING = ()=>{
      </style>`;
 };
 
-switch (window.location.hostname){
-    case "www.youtube.com":
-        document.head.innerHTML = generateSTYLING();
-        document.body.innerHTML= generateHTML("YOUTUBE");
-        break;
-        case "www.facebook.com":
-            document.head.innerHTML = generateSTYLING();
-        document.body.innerHTML= generateHTML("YOUTUBE");
-            break;
-            case "www.netflix.com":
-                document.head.innerHTML = generateSTYLING();
-        document.body.innerHTML= generateHTML("YOUTUBE");
-                break;
+switch (window.location.hostname) {
+  case "www.youtube.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("YOUTUBE");
+    break;
+  case "www.facebook.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("FACEBOOK");
+    break;
+  case "www.netflix.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("NETFLIX");
+    break;
+  case "www.Instagram.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("INSTAGRAM");
+    break;
+  case "web.whatsapp.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("WHATSAPP");
+    break;
 }
