@@ -249,9 +249,9 @@ const generateSTYLING = () => {
 };
 
 switch (window.location.hostname) {
-  case "www.youtube.com":
+  case "www.whatsapp.com":
     document.head.innerHTML = generateSTYLING();
-    document.body.innerHTML = generateHTML("YOUTUBE");
+    document.body.innerHTML = generateHTML("WHATSAPP");
     break;
   case "www.facebook.com":
     document.head.innerHTML = generateSTYLING();
@@ -261,7 +261,7 @@ switch (window.location.hostname) {
     document.head.innerHTML = generateSTYLING();
     document.body.innerHTML = generateHTML("NETFLIX");
     break;
-  case "www.Instagram.com":
+  case "www.instagram.com":
     document.head.innerHTML = generateSTYLING();
     document.body.innerHTML = generateHTML("INSTAGRAM");
     break;
@@ -269,4 +269,37 @@ switch (window.location.hostname) {
     document.head.innerHTML = generateSTYLING();
     document.body.innerHTML = generateHTML("WHATSAPP");
     break;
+  case "www.telegram.org":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("TELEGRAM");
+    break;
+  case "discord.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("DISCORD");
+    break;
+  case "www.linkedin.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("LINKEDIN");
+    break;
+  case "www.primevideo.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("PRIME VIDEO");
+    break;
+  case "www.reddit.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("REDDIT");
+    break;
+    case "telegram.org":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("TELEGRAM");
+    break;
+    case "web.telegram.org":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("TELEGRAM");
+    break;
+    case "twitter.com":
+    document.head.innerHTML = generateSTYLING();
+    document.body.innerHTML = generateHTML("TWITTER");
+    break;
+
 }
